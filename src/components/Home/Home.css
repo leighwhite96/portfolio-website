@@ -1,0 +1,12 @@
+.Home {
+  text-align: center;
+
+}
+
+#btncontainer {
+  width: 50%;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

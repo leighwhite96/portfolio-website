@@ -1,0 +1,6 @@
+#btnContainer {
+  width: 30%;
+  margin: 20vh auto;
+  display: flex;
+  justify-content: space-around;
+}

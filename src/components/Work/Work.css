@@ -1,0 +1,7 @@
+#btnContainer {
+  margin-top: 5vh;
+  margin-bottom: 0;
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}

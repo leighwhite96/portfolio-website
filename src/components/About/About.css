@@ -1,0 +1,27 @@
+.About {
+  text-align: center;
+}
+/*#imgcontainer {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+}
+
+#maFace {
+  width: 70%;
+  border-radius: 1%;
+  box-shadow: 1px 1px 1px 1px gray;
+}*/
+
+#logoContainer {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#quoteContainer {
+  margin-left: 3vw;
+}

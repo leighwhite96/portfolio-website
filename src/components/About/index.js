@@ -52,12 +52,12 @@ class About extends Component {
           <i class="devicon-html5-plain colored fa-2x"></i>
           <i class="devicon-css3-plain-wordmark colored fa-2x"></i>
           <i class="devicon-bootstrap-plain fa-2x"></i>
-          <i class="devicon-javascript-plain colored fa-2x"></i>
-          <i class="devicon-github-plain colored fa-2x"></i>
+          <i class="devicon-nodejs-plain colored fa-2x"></i>
           <i class="devicon-atom-original colored fa-2x"></i>
+          <i class="devicon-github-plain colored fa-2x"></i>
           <i class="devicon-express-original colored fa-2x"></i>
           <i class="devicon-mongodb-plain colored fa-2x"></i>
-          <i class="devicon-nodejs-plain colored fa-2x"></i>
+          <i class="devicon-javascript-plain colored fa-2x"></i>
           <i class="devicon-react-original colored fa-2x"></i>
         </div>
         </Row>

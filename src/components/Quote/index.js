@@ -95,7 +95,7 @@ class Quote extends Component {
           <h6>{this.state.author}</h6>
           <hr style={{width: '30px'}}/>
           <span style={{fontStyle: 'italic'}}>Don't like this quote?</span><br/>
-          <Button style={btnStyle} outline color="secondary" onClick={this.getQuote}>Get a new quote</Button>
+          <Button id="btn" style={btnStyle} outline color="secondary" onClick={this.getQuote}>Get a new quote</Button>
         </div>
       )
     } else {

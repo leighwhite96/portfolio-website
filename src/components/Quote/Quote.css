@@ -1,0 +1,7 @@
+#btn:hover {
+  background: none;
+  color: black;
+}
+#btn:active {
+  background: none;
+}

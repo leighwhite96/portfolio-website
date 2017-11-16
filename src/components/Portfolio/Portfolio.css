@@ -1,10 +1,11 @@
 .Portfolio {
   min-height: 80vh;
+  text-align: center;
 }
 
 #header {
   min-height: 80vh;
   width: 100%;
-  background-image: url('./4.jpg');
+  background-image: url('./6.jpg');
   background-size: cover;
 }

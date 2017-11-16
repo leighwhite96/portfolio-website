@@ -15,7 +15,8 @@ class Work extends Component {
   constructor(props){
     super(props);
     this.state = {
-      page: 0
+      page: 0,
+      all: false
     }
   }
 
@@ -30,6 +31,12 @@ class Work extends Component {
     }))
   }
 
+  backToTopClick = () => {
+    this.setState((prevState) => ({
+      all: true
+    }))
+  }
+
   render () {
     if(this.state.page === 0) {
 
@@ -39,10 +46,12 @@ class Work extends Component {
         initialStyle={{opacity: 0}}
         transition="opacity 0.3s ease-in"
         finalStyle={{opacity: 1}}
-    >
+    >     <div className="Work">
+          <h1 className="display-4">Examples of my work</h1>
           <Proj1 />
-          <div id="btnContainer">
-          <Button outline color="secondary" onClick={this.nextClick}>See more</Button>
+          <div id="btnContainer1">
+          <Button id="btn" outline color="secondary" onClick={this.nextClick}>See more</Button>
+          </div>
           </div>
         </EasyTransition>
       )
@@ -54,14 +63,20 @@ class Work extends Component {
         transition="opacity 0.3s ease-in"
         finalStyle={{opacity: 1}}
     >
+          <div className="Work">
+          <h1 className="display-4">Examples of my work</h1>
+          <Proj1 />
+          <div id="btnContainer1">
+          <Button id="btn" outline color="secondary" onClick={this.nextClick}>See more</Button>
+          </div>
           <Proj2 />
           <div id="btnContainer">
-          <Button outline color="secondary" onClick={this.nextClick}>See more</Button>
-          <Button outline color="secondary" onClick={this.backClick}>Back</Button>
+          <Button id="btn" outline color="secondary" onClick={this.nextClick}>See more</Button>
+          </div>
           </div>
         </EasyTransition>
       )
-    } else {
+    } else if (this.state.page === 2 || this.state.all) {
       return (
         <EasyTransition
         path={"/"}
@@ -69,14 +84,28 @@ class Work extends Component {
         transition="opacity 0.3s ease-in"
         finalStyle={{opacity: 1}}
     >
-          <Proj3 />
+          <div className="Work">
+          <h1 className="display-4">Examples of my work</h1>
+          <Proj1 />
+          <div id="btnContainer1">
+            <Button id="btn" outline color="secondary" onClick={this.nextClick}>See more</Button>
+          </div>
+          <Proj2 />
           <div id="btnContainer">
-          <Button outline color="secondary" onClick={this.backClick}>Back</Button>
+            <Button id="btn" outline color="secondary" onClick={this.nextClick}>See more</Button>
+          </div>
+            <Proj3 />
+          <div id="btnContainer">
+            <Button id="btn" outline color="secondary" onClick={this.backToTopClick}><a href="#top">Back to Top</a></Button>
+          </div>
           </div>
         </EasyTransition>
       )
     }
+
+    }
+
   }
-}
+
 
 export default Work;

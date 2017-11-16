@@ -46,7 +46,7 @@ class App extends Component {
         <h1>Random User Generator</h1>
         <h3>How many users would you like?</h3>
             <TextField id="userinput" type="number" value={this.state.num} onChange={this.onNumberChange}/>
-            <Button outline color="secondary" onClick={this.onFormSubmit}>Submit</Button>
+            <Button id="btn" outline color="secondary" onClick={this.onFormSubmit}>Submit</Button>
         </div>
     )
   } else {
@@ -59,7 +59,7 @@ class App extends Component {
           <h1>Random User Generator</h1>
           <h3>How many users would you like?</h3>
               <TextField id="userinput" type="number" value={this.state.num} onChange={this.onNumberChange}/>
-              <Button outline color="secondary" onClick={this.onFormSubmit}>Submit</Button>
+              <Button id="btn" outline color="secondary" onClick={this.onFormSubmit}>Submit</Button>
             <UserProfile number={this.state.num}/>
           </div>
 

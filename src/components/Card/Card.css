@@ -1,6 +1,14 @@
 #proj {
   height: 100vh;
+  margin-bottom: 2vh;
 }
 #proj:hover {
   box-shadow: 1px 1px 1px 1px gray;
+}
+#btn:hover {
+  background: none;
+  color: black;
+}
+#btn:active {
+  background: none;
 }

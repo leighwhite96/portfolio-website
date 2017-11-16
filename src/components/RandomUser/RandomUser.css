@@ -1,6 +1,26 @@
 .App {
   text-align: center;
 }
+#btn:hover {
+  background: none;
+  color: black;
+}
+
+#btn:active {
+  background: none;
+}
+
 #back {
   float: left;
+  background: none;
+  color: gray;
+}
+
+#back:hover {
+  background: none;
+  color: black;
+}
+
+#back:active {
+  background: none;
 }

@@ -1,7 +1,7 @@
-#btnContainer {
+.Work {
   margin-top: 5vh;
-  margin-bottom: 0;
-  width: 20vw;
-  display: flex;
-  justify-content: space-around;
+}
+
+#btnContainer, #btnContainer1 {
+  margin: 5vh auto;
 }

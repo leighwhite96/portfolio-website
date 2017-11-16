@@ -4,3 +4,10 @@
   display: flex;
   justify-content: space-around;
 }
+#btn:hover {
+  background: none;
+  color: black;
+}
+#btn:active {
+  background: none;
+}

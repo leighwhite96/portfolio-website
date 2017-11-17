@@ -7,8 +7,8 @@ import './Card.css'
 const ProjCard = (props) => {
   return (
     <LinkContainer to={props.path}>
-    <div id="proj">
-    <Card style={{height: '100%'}}>
+    <div >
+    <Card >
 
       <CardMedia>
         <img src={props.pic} alt="" />

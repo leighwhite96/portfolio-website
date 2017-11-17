@@ -1,24 +1,52 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 import './Card.css'
 
-const ProjCardNoLink = (props) => {
-  return (
-    <div id="proj">
-    <Card style={{height: '100%'}} >
+class ProjCardNoLink extends Component {
 
-      <CardMedia>
-        <img src={props.pic} alt="" />
-      </CardMedia>
-        <CardTitle title={props.title} subtitle={props.sub} titleStyle={props.titleStyle} />
-      <CardText>
-        {props.text}
-      </CardText>
+  constructor(props){
+    super(props);
+    this.state = {
+      display:false
+    }
+    this.onMouseOver = this.onMouseOver.bind(this);
+  }
 
-    </Card>
-    </div>
-  )
+  onMouseOver(){
+    console.log('mouse over');
+    this.setState({
+      display: true
+    })
+  }
+
+  render(){
+    const styles = {
+      'true': {
+        display:'visible'
+      },
+      'false':{
+        display:'none'
+      }
+    }
+        return (
+          <div onMouseOver={this.onMouseOver}>
+          <Card>
+
+            <CardMedia overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />} overlayContainerStyle={styles[this.state.display ? 'true' : 'false' ]}>
+              <img src={this.props.pic} alt="" />
+            </CardMedia>
+              <CardTitle title={this.props.title} subtitle={this.props.sub} titleStyle={this.props.titleStyle} />
+            <CardText>
+              {this.props.text}
+            </CardText>
+
+          </Card>
+          </div>
+        )
+
+  }
 }
+
 
 export default ProjCardNoLink;

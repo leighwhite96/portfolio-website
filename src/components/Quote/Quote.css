@@ -5,3 +5,7 @@
 #btn:active {
   background: none;
 }
+#btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 0px;  
+}

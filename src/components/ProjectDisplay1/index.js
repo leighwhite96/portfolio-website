@@ -12,13 +12,13 @@ class Projects1 extends Component {
       <Container className="Work" >
         <Row>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCard path="/work/randomuser" title="Random User Generator" sub="subtitle" pic="users2.png" text={text} />
+            <ProjCard path="/work/randomuser" title="Random User Generator" pic="users2.png"  />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink title="Second order polynomial equation solver" sub="subtitle" pic="equation.png" text={text}/>
+            <ProjCardNoLink title="Second order polynomial equation solver" pic="equation.png" />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink title="Rock Paper Scissors" sub="subtitle" pic="rps.png" text={text} titleStyle={{paddingTop:'75px'}}/>
+            <ProjCardNoLink title="Rock Paper Scissors" pic="rps.png"  titleStyle={{paddingTop:'75px'}}/>
           </Col>
         </Row>
         </Container>

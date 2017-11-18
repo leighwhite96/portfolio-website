@@ -1,52 +1,61 @@
-import React, { Component } from 'react'
-import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import React, {Component} from 'react';
+import {Card, CardTitle, CardMedia, CardText} from 'material-ui';
 
-import './Card.css'
+import BigProjCard from '../BigProjCard';
 
 class ProjCardNoLink extends Component {
 
   constructor(props){
     super(props);
     this.state = {
-      display:false
+      display:false,
     }
-    this.onMouseOver = this.onMouseOver.bind(this);
+    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseExit = this.onMouseExit.bind(this);
   }
 
-  onMouseOver(){
-    console.log('mouse over');
+  onMouseEnter(){
+    console.log('mouse enter');
     this.setState({
       display: true
     })
   }
 
-  render(){
-    const styles = {
-      'true': {
-        display:'visible'
-      },
-      'false':{
-        display:'none'
-      }
-    }
-        return (
-          <div onMouseOver={this.onMouseOver}>
-          <Card>
-
-            <CardMedia overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />} overlayContainerStyle={styles[this.state.display ? 'true' : 'false' ]}>
-              <img src={this.props.pic} alt="" />
-            </CardMedia>
-              <CardTitle title={this.props.title} subtitle={this.props.sub} titleStyle={this.props.titleStyle} />
-            <CardText>
-              {this.props.text}
-            </CardText>
-
-          </Card>
-          </div>
-        )
-
+  onMouseExit(){
+    console.log('mouse exit');
+    this.setState({
+      display: false
+    })
   }
-}
 
+  render(){
+    if(!this.props.bigCard){
+    return (
+      <div id="proj" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseExit} onClick={this.props.onClick}>
+      <Card>
+        {this.state.display
+          ? <CardMedia overlay={<CardTitle
+              title={this.props.title}
+              subtitle={this.props.sub}
+            />}
+          >
+            <img src={this.props.pic} alt="" />
+          </CardMedia>
+          : <CardMedia >
+            <img src={this.props.pic} alt="" />
+          </CardMedia>
+        }
+
+      </Card>
+      </div>
+    )
+  } else {
+    return (
+      <BigProjCard />
+    )
+  }
+
+}
+}
 
 export default ProjCardNoLink;

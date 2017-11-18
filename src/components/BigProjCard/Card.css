@@ -1,6 +1,10 @@
 #proj {
   display: block;
 }
+#proj{
+  width: 80vw;
+  height: 100vh;
+}
 #proj:hover {
   box-shadow: 1px 1px 1px 1px gray;
 }

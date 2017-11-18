@@ -1,24 +1,61 @@
-import React from 'react'
-import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import React, {Component} from 'react';
+import {Card, CardTitle, CardMedia, CardText} from 'material-ui';
 
-import './Card.css'
+import BigProjCard from '../BigProjCard';
 
-const ProjCardNoLink = (props) => {
-  return (
-    <div id="proj">
-    <Card style={{height: '100%'}} >
+class ProjCardNoLink extends Component {
 
-      <CardMedia>
-        <img src={props.pic} alt="" />
-      </CardMedia>
-        <CardTitle title={props.title} subtitle={props.sub} titleStyle={props.titleStyle} />
-      <CardText>
-        {props.text}
-      </CardText>
+  constructor(props){
+    super(props);
+    this.state = {
+      display:false,
+    }
+    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseExit = this.onMouseExit.bind(this);
+  }
 
-    </Card>
-    </div>
-  )
+  onMouseEnter(){
+    console.log('mouse enter');
+    this.setState({
+      display: true
+    })
+  }
+
+  onMouseExit(){
+    console.log('mouse exit');
+    this.setState({
+      display: false
+    })
+  }
+
+  render(){
+    if(!this.props.bigCard){
+    return (
+      <div id="proj" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseExit} onClick={this.props.onClick}>
+      <Card>
+        {this.state.display
+          ? <CardMedia overlay={<CardTitle
+              title={this.props.title}
+              subtitle={this.props.sub}
+            />}
+          >
+            <img src={this.props.pic} alt="" />
+          </CardMedia>
+          : <CardMedia >
+            <img src={this.props.pic} alt="" />
+          </CardMedia>
+        }
+
+      </Card>
+      </div>
+    )
+  } else {
+    return (
+      <BigProjCard />
+    )
+  }
+
+}
 }
 
 export default ProjCardNoLink;

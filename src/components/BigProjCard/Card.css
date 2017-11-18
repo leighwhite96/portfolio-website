@@ -1,0 +1,23 @@
+.project {
+  margin-top: 5vh;
+}
+#bigproj{
+  width: 80vw;
+  margin: 5vh auto;
+}
+#bigproj:hover {
+  box-shadow: 1px 1px 1px 1px gray;
+}
+#back {
+  background: none;
+  color: gray;
+}
+
+#back:hover {
+  background: none;
+  color: black;
+}
+
+#back:active {
+  background: none;
+}

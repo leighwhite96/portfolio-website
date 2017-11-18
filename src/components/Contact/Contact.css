@@ -1,3 +1,7 @@
+.About {
+  margin-top: 10vh;
+}
+
 #btnContainer {
   width: 30%;
   margin: 20vh auto;
@@ -10,4 +14,9 @@
 }
 #btn:active {
   background: none;
+}
+#btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 0px;
+  
 }

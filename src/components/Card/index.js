@@ -1,27 +1,56 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 import './Card.css'
 
-const ProjCard = (props) => {
-  return (
-    <LinkContainer to={props.path}>
-    <div id="proj">
-    <Card style={{height: '100%'}}>
+class ProjCard extends Component {
+  constructor(props){
+  super(props);
+  this.state = {
+    display:false
+  }
+  this.onMouseEnter = this.onMouseEnter.bind(this);
+  this.onMouseExit = this.onMouseExit.bind(this);
+}
 
-      <CardMedia>
-        <img src={props.pic} alt="" />
-      </CardMedia>
-        <CardTitle title={props.title} subtitle={props.sub} titleStyle={props.titleStyle}/>
-      <CardText>
-        {props.text}
-      </CardText>
+onMouseEnter(){
+  console.log('mouse enter');
+  this.setState({
+    display: true
+  })
+}
+
+onMouseExit(){
+  console.log('mouse exit');
+  this.setState({
+    display: false
+  })
+}
+
+  render () {
+    return(
+    <LinkContainer to={this.props.path}>
+    <div id="proj" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseExit}>
+    <Card>
+      {this.state.display
+        ? <CardMedia overlay={<CardTitle
+            title={this.props.title}
+            subtitle={this.props.sub}
+          />}
+        >
+          <img src={this.props.pic} alt="" />
+        </CardMedia>
+        : <CardMedia >
+          <img src={this.props.pic} alt="" />
+        </CardMedia>
+      }
+
 
     </Card>
     </div>
-    </LinkContainer>
-  )
+    </LinkContainer>)
+  }
 }
 
-export default ProjCard
+export default ProjCard;

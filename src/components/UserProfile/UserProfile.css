@@ -10,3 +10,17 @@
   margin: 1vw
 
 }
+@media screen and (max-width: 800px) {
+  #card-holder {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .cards{
+    margin: 1vh auto;
+    width: 60vw;
+
+  }
+}

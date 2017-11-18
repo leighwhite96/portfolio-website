@@ -16,7 +16,7 @@ import BigProjCard from '../BigProjCard'
 class Work extends Component {
   constructor(props){
     super(props);
-    this.state = {
+    this.state = { 
       page: 0,
       all: false,
       bigCard: false

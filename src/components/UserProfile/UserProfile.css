@@ -4,9 +4,19 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .cards{
   width: 22vw;
   margin: 1vw
-
+}
+@media screen and (max-width: 800px) {
+  #card-holder {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cards {
+    margin: 1vh auto;
+    width: 50vw;
+  }
 }

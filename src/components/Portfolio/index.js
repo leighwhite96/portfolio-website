@@ -21,7 +21,12 @@ class Portfolio extends Component {
       projects: [
         'randomuser',
         'equation',
-        'rps'
+        'rps',
+        'phone',
+        'ron',
+        'table',
+        'staticportfolio',
+        'reactrouter'
       ]
     }
   }
@@ -41,6 +46,11 @@ class Portfolio extends Component {
             <Route path={`/work/${this.state.projects[0]}`} component={RandomUser}/>
             <Route path={`/work/${this.state.projects[1]}`} render={()=><BigProjCard title="Equation" text={text}/>}/>
             <Route path={`/work/${this.state.projects[2]}`} render={()=><BigProjCard title="RPS" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[3]}`} render={()=><BigProjCard title="Phone" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[4]}`} render={()=><BigProjCard title="Ron" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[5]}`} render={()=><BigProjCard title="Table" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[6]}`} render={()=><BigProjCard title="Static Portfolio" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[7]}`} render={()=><BigProjCard title="React Router App" text={text}/>}/>
             </Switch>
           </Container>
         </Jumbotron>

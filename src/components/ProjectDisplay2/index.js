@@ -3,22 +3,20 @@ import { Container, Row, Col } from 'reactstrap'
 
 
 import ProjCard from '../Card'
-import ProjCardNoLink from '../CardNoLink'
 
 class Projects2 extends Component {
   render () {
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio."
     return(
       <Container className="Work" >
         <Row>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink title="Phone" sub="subtitle" pic="phone.png" text={text} />
+            <ProjCard path="/work/phone" title="Phone" sub="subtitle" pic="phone.png"  />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink title="Ron Swanson Quote Generator" sub="subtitle" pic="ron.png" text={text}/>
+            <ProjCard path="/work/ron" title="Ron Swanson Quote Generator" sub="subtitle" pic="ron.png" />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink title="Table" sub="subtitle" pic="table.png" text={text} />
+            <ProjCard path="/work/table" title="Table" sub="subtitle" pic="table.png"  />
           </Col>
         </Row>
         </Container>

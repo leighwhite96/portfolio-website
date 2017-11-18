@@ -18,8 +18,8 @@ const BigProjCard = (props) => {
       finalStyle={{opacity: 1}}
       >
       <div id="bigproj" >
-      <Card>
-      <CardText>{props.text}</CardText>
+      <Card style={{opacity: "0.9"}}>
+      <CardText >{props.text}</CardText>
 
       </Card>
       <LinkContainer to="/work">

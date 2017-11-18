@@ -20,7 +20,8 @@ class Portfolio extends Component {
     this.state = {
       projects: [
         'randomuser',
-        'equation'
+        'equation',
+        'rps'
       ]
     }
   }
@@ -38,7 +39,8 @@ class Portfolio extends Component {
             <Route path="/contact" component={Contact}/>
             <Route exact path="/work" component={Work}/>
             <Route path={`/work/${this.state.projects[0]}`} component={RandomUser}/>
-            <Route path={`/work/${this.state.projects[1]}`} render={()=><BigProjCard text={text}/>}/>
+            <Route path={`/work/${this.state.projects[1]}`} render={()=><BigProjCard title="Equation" text={text}/>}/>
+            <Route path={`/work/${this.state.projects[2]}`} render={()=><BigProjCard title="RPS" text={text}/>}/>
             </Switch>
           </Container>
         </Jumbotron>

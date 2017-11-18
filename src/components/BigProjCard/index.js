@@ -10,7 +10,7 @@ const BigProjCard = (props) => {
 
     return (
       <div className="project">
-      <h1 className="display-4">Equation</h1>
+      <h1 className="display-4">{props.title}</h1>
       <EasyTransition
       path={"/"}
       initialStyle={{opacity: 0}}

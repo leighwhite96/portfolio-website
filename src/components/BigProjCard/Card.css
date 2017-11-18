@@ -1,10 +1,10 @@
-#proj {
-  display: block;
+.project {
+  margin-top: 5vh;
 }
-#proj{
+#bigproj{
   width: 80vw;
-  height: 100vh;
+  margin: 5vh auto;
 }
-#proj:hover {
+#bigproj:hover {
   box-shadow: 1px 1px 1px 1px gray;
 }

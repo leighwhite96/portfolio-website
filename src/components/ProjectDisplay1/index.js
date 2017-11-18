@@ -14,7 +14,7 @@ class Projects1 extends Component {
             <ProjCard path="/work/randomuser" title="Random User Generator" pic="users2.png"  />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
-            <ProjCardNoLink onClick={this.props.onClick} bigCard={this.props.bigCard} title="Second order polynomial equation solver" pic="equation.png" />
+            <ProjCard path="/work/equation" onClick={this.props.onClick} bigCard={true} title="Second order polynomial equation solver" pic="equation.png" />
           </Col>
           <Col xs="12" sm="12" md="12" lg="4" >
             <ProjCardNoLink onClick={this.props.onClick} bigCard={this.props.bigCard} title="Rock Paper Scissors" pic="rps.png"  titleStyle={{paddingTop:'75px'}}/>

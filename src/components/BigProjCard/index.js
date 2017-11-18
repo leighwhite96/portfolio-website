@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Card, CardTitle, CardMedia, CardText} from 'material-ui';
 import EasyTransition from 'react-easy-transition'
+import {Button} from 'reactstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 import './Card.css'
 
@@ -20,6 +22,9 @@ const BigProjCard = (props) => {
       <CardText>{props.text}</CardText>
 
       </Card>
+      <LinkContainer to="/work">
+        <Button outline color="secondary" id="back">Back</Button>
+      </LinkContainer>
       </div>
       </EasyTransition>
       </div>

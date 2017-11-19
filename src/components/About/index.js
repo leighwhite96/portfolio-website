@@ -22,8 +22,13 @@ class About extends Component {
       finalStyle={{opacity: 1}}
   >
       <Container className="About" >
+      <Row>
+      <Col className="section" id="first" xs="12" sm="12" md="4" lg="4" >
+      <div id="imgcontainer">
+        <img src="headshot.jpg" id="maFace"/>
+      </div>
 
-        <Row>
+      </Col>
           <Col className="section" xs="12" sm="12" md="4" lg="4" >
             <h1 className="display-4">About</h1>
             Hi. stuff about me. I am so interesting. Text text text text
@@ -48,11 +53,7 @@ class About extends Component {
             <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
           </ul>
           </Col>
-          <Col xs="12" sm="12" md="4" lg="4" >
-          <div className="section" id="quoteContainer" >
-            <Quote />
-          </div>
-          </Col>
+
         </Row>
         <Row>
         <div id="logoContainer" ref="icon">

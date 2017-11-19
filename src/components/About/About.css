@@ -2,17 +2,18 @@
   text-align: center;
 }
 #first {
-  margin-left: -5vw;
+  margin-left: 0;
 }
 #imgcontainer {
   display: flex;
   justify-content: center;
-  margin: 14vh auto;
-  height: 30vh;
+  margin: 5vh auto;
+  height: auto;
 }
 
 #maFace {
-  width: 70%;
+  width: auto;
+  zoom: 0.3;
   border-radius: 1%;
   box-shadow: 1px 1px 1px 1px gray;
 }
@@ -20,7 +21,7 @@
 #logoContainer {
   width: 100vw;
   padding: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   display: flex;
   /*flex-direction: row-reverse;*/
   justify-content: space-around;
@@ -31,6 +32,12 @@
   /*margin-left: 3vw;*/
 }
 
-.section {
-  margin-top: -15vh;
+@media screen and (min-width: 1000px) {
+  .section {
+    margin-top: -15vh;
+  }
+}
+#logo {
+  margin: 0 auto;
+  font-style: italic;
 }

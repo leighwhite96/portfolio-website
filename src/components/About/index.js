@@ -23,39 +23,29 @@ class About extends Component {
   >
       <Container className="About" >
       <Row>
-      <Col className="section" id="first" xs="12" sm="12" md="4" lg="4" >
+      <Col className="section" id="first" xs="12" sm="12" md="12" lg="4" >
       <div id="imgcontainer">
         <img src="headshot.jpg" id="maFace"/>
       </div>
+      <p>Welcome to my website! Here's a bit of background about me. After graduating in Maths in early 2017 I found myself a bit lost and unenthused by the idea of applying for countless grad schemes. In the summer I stumbled across the School of Code and I haven't looked back since. </p>
 
       </Col>
-          <Col className="section" xs="12" sm="12" md="4" lg="4" >
+          <Col className="section" xs="12" sm="12" md="12" lg="4" >
             <h1 className="display-4">About</h1>
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
-            Hi. stuff about me. I am so interesting. Text text text text
+            <p>During my time at the School of Code I have found that I enjoy both front and back-end development and going forward want to work in a full-stack role. </p>
+            <p>In particular I have really enjoyed working with React (I like it so much I decided to build my wesbite uisng it!) and working with MongoDB on the server-side.</p>
+            <p>I am interested in working collaboratively in an Agile team and in a position where I have the opportunity to develop new skills and learn new technologies. </p>
           </Col>
-          <Col className="section" xs="12" sm="12" md="4" lg="4">
+          <Col className="section" xs="12" sm="12" md="12" lg="4">
           <h1 className="display-4">Key Skills</h1>
           <ul>
-            <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
-            <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
-            <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
-            <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
-            <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
             <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
           </ul>
           </Col>
 
         </Row>
         <Row>
+        <span id="logo">Don't like the order of these logos? Move them around...</span>
         <div id="logoContainer" ref="icon">
           <div><i class="devicon-html5-plain colored fa-2x"></i></div>
           <div><i class="devicon-css3-plain-wordmark colored fa-2x"></i></div>

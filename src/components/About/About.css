@@ -16,12 +16,17 @@
 #logoContainer {
   width: 100vw;
   padding: 30px;
+  padding-bottom: 10px;
   display: flex;
-  flex-direction: row-reverse;
+  /*flex-direction: row-reverse;*/
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 #quoteContainer {
   margin-left: 3vw;
+}
+
+.section {
+  margin-top: -15vh;
 }

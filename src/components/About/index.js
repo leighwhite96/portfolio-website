@@ -24,7 +24,7 @@ class About extends Component {
       <Container className="About" >
 
         <Row>
-          <Col xs="12" sm="12" md="4" lg="4" >
+          <Col className="section" xs="12" sm="12" md="4" lg="4" >
             <h1 className="display-4">About</h1>
             Hi. stuff about me. I am so interesting. Text text text text
             Hi. stuff about me. I am so interesting. Text text text text
@@ -37,7 +37,7 @@ class About extends Component {
             Hi. stuff about me. I am so interesting. Text text text text
             Hi. stuff about me. I am so interesting. Text text text text
           </Col>
-          <Col xs="12" sm="12" md="4" lg="4">
+          <Col className="section" xs="12" sm="12" md="4" lg="4">
           <h1 className="display-4">Key Skills</h1>
           <ul>
             <li>A skillHi. stuff about me. I am so interesting. Text text text text </li>
@@ -49,7 +49,7 @@ class About extends Component {
           </ul>
           </Col>
           <Col xs="12" sm="12" md="4" lg="4" >
-          <div id="quoteContainer" >
+          <div className="section" id="quoteContainer" >
             <Quote />
           </div>
           </Col>

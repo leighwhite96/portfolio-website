@@ -7,7 +7,7 @@ app.engine('handlebars', hbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
-    res.send('home');
+    res.json({message: 'working'});
 });
 
 app.listen(5000, function(){
